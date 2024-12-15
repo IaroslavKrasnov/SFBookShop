@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SF Bookshop</title>
+    <link rel="stylesheet" href="../dist/main.css">
+    <script src="../dist/main.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper header__content">
+            <div class="header__title">Bookshop</div>
+            <nav>
+                <ul class="navigation-menu">
+                    <li class="navigation-menu__item_active"><a href="#">Books</a></li>
+                    <li class="navigation-menu__item"><a href="#">Audiobooks</a></li>
+                    <li class="navigation-menu__item"><a href="#">Stationery & gifts</a></li>
+                    <li class="navigation-menu__item"><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+            <div>
+                <div class="header__buttons">
+                    <img class="header__buttons__item" src="images/icon-user.svg" alt="Иконка пользователя">
+                    <img class="header__buttons__item" src="images/icon-search.svg" alt="Иконка поиска">
+                    <img class="header__buttons__item" src="images/icon-shop_bag.svg" alt="Иконка корзины">
+                </div>
+            </div>         
+        </div>
+    </header>
+    <main class="main">
+        <section class="slider-section">
+            <div class="wrapper">
+                <div class="slider-section__grid">
+                    <div class="slider-section__photo-area"></div>
+                    <div class="slider-section__slider">
+                        <div class="slider-section__slider_dots"></div>
+                    </div>   
+                    <a class="slider-section__promo-1"><img href="#" src="images/promo-1.png" alt="Промо-баннер 1"></a>
+                    <a class="slider-section__promo-2"><img href="#" src="images/promo-2.png" alt="Промо-баннер 2"></a>          
+                </div>   
+            </div>            
+        </section>
+        <section class="books-section wrapper">
+            <nav class="books-section__menu">
+                <ul class="navigation-books-menu">
+                    <li><a class="navigation-books-menu__item navigation-books-menu__item_active" data-category="subject:Architecture" href="">Architecture</a></li>
+                    <li><a class="navigation-books-menu__item" data-category="subject:Art" href="#">Art & Fashion</a></li>
+                    <li><a class="navigation-books-menu__item" data-category="subject:Biography & Autobiography" href="#">Biography</a></li>
+                    <li><a class="navigation-books-menu__item" data-category="subject:Business" href="#">Business</a></li>
+                    <li><a class="navigation-books-menu__item" data-category="subject:Crafts & Hobbies" href="#">Crafts & Hobbies</a></li>
+                    <li><a class="navigation-books-menu__item" data-category="subject:Drama" href="#">Drama</a></li>
+                    <li><a class="navigation-books-menu__item" data-category="subject:Fiction" href="#">Fiction</a></li>
+                    <li><a class="navigation-books-menu__item" data-category="subject:Cooking" href="#">Food & Drink</a></li>
+                    <li><a class="navigation-books-menu__item" data-category="subject:Health & Fitness" href="#">Health & Wellbeing</a></li>
+                    <li><a class="navigation-books-menu__item" data-category="subject:History" href="#">History & Politics</a></li>
+                    <li><a class="navigation-books-menu__item" data-category="subject:Humor" href="#">Humor</a></li>
+                    <li><a class="navigation-books-menu__item" data-category="subject:Poetry" href="#">Poetry</a></li>
+                    <li><a class="navigation-books-menu__item" data-category="subject:Psychology" href="#">Psychology</a></li>
+                    <li><a class="navigation-books-menu__item" data-category="subject:Science" href="#">Science</a></li>
+                    <li><a class="navigation-books-menu__item" data-category="subject:Technology" href="#">Technology</a></li>
+                    <li><a class="navigation-books-menu__item" data-category="subject:Travel" href="#">Travel & Maps</a></li>
+                </ul>
+            </nav>
+            <main class="books-section__books-cards-flex">
+                <div class="books-section__books-cards">
+                    <!-- <div class="book-card">
+                        <img class="book-card__image" src="images/test_img/cover_1.png" alt="Обложка книги">
+                        <div class="book-card__info">
+                            <div class="book-card__authors">Kevin Kwan</div>
+                            <div class="book-card__title">Crazy rich asians</div>
+                            <div class="book-card__rating">
+                                <div class="book-card__rating-stars"></div>
+                                <div class="book-card__review-counter"></div>
+                            </div>
+                            <div class="book-card__description">The outrageously funny debut novel about three super-rich, pedigreed Chinese families and the gossip. Chinese families and the gossip</div>
+                            <div class="book-card__price">$4.99</div>
+                            <button class="book-card__button button">buy now</button>
+                        </div>
+                    </div> -->                                       
+                </div>
+                <button class="button btn_load">Load more</button>
+            </main>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,44 @@
+@import "variables.scss";
+@import "reset.scss";
+@import "fonts.scss";
+@import "header.scss";
+@import "navigation-menu.scss";
+@import "slider-section.scss";
+@import "books-section.scss";
+
+
+.wrapper {
+    width: calc(100% - 40px);
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    display: flex;
+    width: 176px;
+    min-height: 44px;
+    justify-content: center;
+    align-items: center;
+    color: $color-dark-purple;
+    font-size: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 0%;
+    border-color: $color-dark-purple;
+    border-width: 1px;
+    cursor: pointer;
+    background-color: $color-white;
+}
+
+.button:hover {
+    background-color: $color-light-grey;
+}

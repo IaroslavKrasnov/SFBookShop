@@ -1,0 +1,26 @@
+{
+  "name": "sf_bookshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile-css-watch": "sass src/css/styles.scss src/css/styles.css --watch",
+    "build": "webpack",
+    "build:watch": "webpack --watch"
+  },
+  "keywords": [],
+  "author": "Iaroslav. V. Krasnov",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.81.0"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "css-minimizer-webpack-plugin": "^7.0.0",
+    "mini-css-extract-plugin": "^2.9.2",
+    "sass-loader": "^16.0.4",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^5.1.4"
+  }
+}

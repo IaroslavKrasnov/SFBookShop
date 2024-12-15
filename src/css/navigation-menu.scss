@@ -1,0 +1,23 @@
+.navigation-menu {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2vw;
+}
+
+@mixin navigation-menu__item($font-weight, $color) {
+    font-size: 10px;
+    font-optical-sizing: auto;
+    font-weight: $font-weight;
+    font-style: normal;
+    color: $color;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navigation-menu__item > a {
+    @include navigation-menu__item(700, $color-grey);
+}
+
+.navigation-menu__item_active > a {
+    @include navigation-menu__item(900, $color-main-dark);
+}
