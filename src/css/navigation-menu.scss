@@ -2,6 +2,10 @@
     display: flex;
     justify-content: space-between;
     column-gap: 2vw;
+
+    @media screen and (max-width: 679.98px) {
+        display: none;
+    }
 }
 
 @mixin navigation-menu__item($font-weight, $color) {

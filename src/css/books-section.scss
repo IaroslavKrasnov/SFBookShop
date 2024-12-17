@@ -1,5 +1,9 @@
 .books-section {
     display: flex;
+
+    @media screen and (max-width: 1159.98px) {
+        justify-content: center;
+    }
 }
 
 .navigation-books-menu {
@@ -42,6 +46,10 @@ li:has(.navigation-books-menu__item_active) {
     align-items: center;
     gap: 96px;
     margin-bottom: 74px;
+
+    @media screen and (max-width: 1159.98px) {
+        width: min-content;
+    }
 }
 
 .books-section__books-cards {
