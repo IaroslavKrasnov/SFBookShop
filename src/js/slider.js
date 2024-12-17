@@ -70,6 +70,4 @@ let sliderOptions = {
   autoplayInterval: 5000
 };
 
-document.addEventListener("DOMContentLoaded", function() {
-  initSlider(sliderOptions);
-});
+export {initSlider, sliderOptions};
