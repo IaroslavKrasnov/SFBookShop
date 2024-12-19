@@ -35,7 +35,7 @@ li:has(.navigation-books-menu__item_active) {
     text-decoration: none;
 }
 
-.navigation-books-menu__item > a:hover {
+.navigation-books-menu__item:hover {
     text-decoration: underline;
     cursor: pointer;
 }
@@ -105,16 +105,22 @@ li:has(.navigation-books-menu__item_active) {
 
 .book-card__rating {
     display: flex;
-    gap: 6px;
+    align-items: center;
+    gap: 2px;
     margin-top: 4px;
 }
 
-.book-card__stars {
-    display: flex;
-    gap: 1px;
+.book-card__rating:has(.book-card__star-counter:empty) {
+    display: none;
 }
 
-.book-card__review-counter {
+.book-card__star-image {
+    height: 12px;
+    width: 12px;
+    margin-right: 6px;
+}
+
+.book-card__star-counter, .book-card__review-counter, .book-card__review-counter-text {
     font-family: $open-sans;
     font-size: 10px;
     font-weight: 400;
@@ -135,10 +141,16 @@ li:has(.navigation-books-menu__item_active) {
 }
 
 .book-card__price {
+    display: flex;
+    column-gap: 4px;
     font-size: 13px;
     font-weight: 700;
     color: $color-main-dark;
     margin-top: 16px;
+}
+
+.book-card__price:has(.book-card__currency:empty) {
+    display: none;
 }
 
 .book-card__button {

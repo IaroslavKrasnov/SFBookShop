@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SF Bookshop</title>
     <link rel="stylesheet" href="../dist/main.css">
-    <script src="../dist/main.js"></script>
-</head>
+    </head>
 <body>
     <header class="header">
         <div class="wrapper header__content">
@@ -24,6 +23,7 @@
                     <img class="header__buttons__item" src="images/icon-user.svg" alt="Иконка пользователя">
                     <img class="header__buttons__item" src="images/icon-search.svg" alt="Иконка поиска">
                     <img class="header__buttons__item" src="images/icon-shop_bag.svg" alt="Иконка корзины">
+                    <div class="header__buttons__cart-count">0</div>
                 </div>
             </div>         
         </div>
@@ -44,22 +44,22 @@
         <section class="books-section wrapper">
             <nav class="books-section__menu">
                 <ul class="navigation-books-menu">
-                    <li><a class="navigation-books-menu__item navigation-books-menu__item_active" data-category="subject:Architecture" href="">Architecture</a></li>
-                    <li><a class="navigation-books-menu__item" data-category="subject:Art" href="#">Art & Fashion</a></li>
-                    <li><a class="navigation-books-menu__item" data-category="subject:Biography & Autobiography" href="#">Biography</a></li>
-                    <li><a class="navigation-books-menu__item" data-category="subject:Business" href="#">Business</a></li>
-                    <li><a class="navigation-books-menu__item" data-category="subject:Crafts & Hobbies" href="#">Crafts & Hobbies</a></li>
-                    <li><a class="navigation-books-menu__item" data-category="subject:Drama" href="#">Drama</a></li>
-                    <li><a class="navigation-books-menu__item" data-category="subject:Fiction" href="#">Fiction</a></li>
-                    <li><a class="navigation-books-menu__item" data-category="subject:Cooking" href="#">Food & Drink</a></li>
-                    <li><a class="navigation-books-menu__item" data-category="subject:Health & Fitness" href="#">Health & Wellbeing</a></li>
-                    <li><a class="navigation-books-menu__item" data-category="subject:History" href="#">History & Politics</a></li>
-                    <li><a class="navigation-books-menu__item" data-category="subject:Humor" href="#">Humor</a></li>
-                    <li><a class="navigation-books-menu__item" data-category="subject:Poetry" href="#">Poetry</a></li>
-                    <li><a class="navigation-books-menu__item" data-category="subject:Psychology" href="#">Psychology</a></li>
-                    <li><a class="navigation-books-menu__item" data-category="subject:Science" href="#">Science</a></li>
-                    <li><a class="navigation-books-menu__item" data-category="subject:Technology" href="#">Technology</a></li>
-                    <li><a class="navigation-books-menu__item" data-category="subject:Travel" href="#">Travel & Maps</a></li>
+                    <li><a class="navigation-books-menu__item navigation-books-menu__item_active">Architecture</a></li>
+                    <li><a class="navigation-books-menu__item">Art & Fashion</a></li>
+                    <li><a class="navigation-books-menu__item">Biography</a></li>
+                    <li><a class="navigation-books-menu__item">Business</a></li>
+                    <li><a class="navigation-books-menu__item">Crafts & Hobbies</a></li>
+                    <li><a class="navigation-books-menu__item">Drama</a></li>
+                    <li><a class="navigation-books-menu__item">Fiction</a></li>
+                    <li><a class="navigation-books-menu__item">Food & Drink</a></li>
+                    <li><a class="navigation-books-menu__item">Health & Wellbeing</a></li>
+                    <li><a class="navigation-books-menu__item">History & Politics</a></li>
+                    <li><a class="navigation-books-menu__item">Humor</a></li>
+                    <li><a class="navigation-books-menu__item">Poetry</a></li>
+                    <li><a class="navigation-books-menu__item">Psychology</a></li>
+                    <li><a class="navigation-books-menu__item">Science</a></li>
+                    <li><a class="navigation-books-menu__item">Technology</a></li>
+                    <li><a class="navigation-books-menu__item">Travel & Maps</a></li>
                 </ul>
             </nav>
             <main class="books-section__books-cards-flex">
@@ -79,9 +79,10 @@
                         </div>
                     </div> -->                                       
                 </div>
-                <button class="button btn_load">Load more</button>
+                <button class="button button_load">Load more</button>
             </main>
         </section>
     </main>
+    <script src="../dist/main.js"></script>
 </body>
 </html>

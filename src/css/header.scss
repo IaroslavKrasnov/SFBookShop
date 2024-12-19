@@ -19,6 +19,23 @@
 }
 
 .header__buttons {
+    position: relative;
     display: flex;
-    gap: 40px;
+    gap: 40px;    
+}
+
+.header__buttons__cart-count {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background-color: $color-red;
+    font-size: 10px;
+    font-weight: 500;
+    color: $color-white;
+    right: -3px;
+    bottom: -3px;
 }
