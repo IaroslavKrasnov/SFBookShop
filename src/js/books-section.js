@@ -5,7 +5,6 @@ const countBooks = 6;
 let activeCategory = document.querySelector(".navigation-books-menu__item.navigation-books-menu__item_active").innerText;
 
 const cartStorage = JSON.parse(localStorage.getItem("cart") ?? "[]");
-// document.querySelector(".header__buttons__cart-count").textContent = cartStorage.length;
 const contentWrapper = document.querySelector(".main");
 const btnMore = contentWrapper.querySelector(".button.button_load");
 
